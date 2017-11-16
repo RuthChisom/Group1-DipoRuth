@@ -1,0 +1,39 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function isIsogram(){
+		var word = document.getElementById("word").value.toLowerCase().split("");
+		var found=[];
+		var count=0;
+		for (var i = 0; i < word.length; i++) {
+			if((found.indexOf(word[i]))==-1){
+				found.push(word[i]);
+				//alert("word is "+ word);
+
+			}
+			else
+			{
+				count++;
+				//alert("count is "+ count);
+				
+				
+			}
+		}
+		
+		if(count==0){ 
+			alert("It is an isogram"); 
+		}
+			else alert("Not an isogram");
+		}
+
+	</script>
+</head>
+
+<body>
+	<form>
+		<p>Enter word</p>
+		<input type="text" id="word"/>
+		<button onclick="isIsogram()" >Check</button>
+	</form>
+</body>
+</html>

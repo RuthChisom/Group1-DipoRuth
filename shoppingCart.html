@@ -1,0 +1,48 @@
+
+
+<html>
+<head>
+	<script type="text/javascript">
+
+	class ShoppingCart{
+		constructor(){
+			total = 0;
+			items = [];
+		}
+		function addItem(item_name, quantity, price){
+			cost = quantity * price;
+			total += cost;
+			items.push(item_name, quantity);
+		}
+		//removeItem is to ....remove d item first, reduce d quantity, then put it back if d quantity is more dn zero
+		//point to the key item_name, reduce d quantiy, splice if quantity < 0, if less dn 0, send error msg
+		function removeItem(item_name, quantity, price){
+			items.splice(item_name,1); //not sure
+			cost = quantity * price;
+			total -= cost;
+			item[item_name][quantity];
+		}
+		function checkOut(cash_paid){
+			if (cash_paid>=total){
+				balance = cash_paid - total;
+				return balance;
+			}
+			else return "Cash paid not enough";
+		}
+	}
+	class Shop{
+		constructor(){
+			ShoppingCart.call(this);
+			this.quantity = 100;
+		}
+		function removeItem(){
+			 quantity--;
+		}
+	}
+	</script>
+</head>
+<body>
+	
+</body>
+
+</html>

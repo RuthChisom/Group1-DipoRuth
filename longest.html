@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function longest(str){
+		//var str = document.getElementById("str").value.split(" ");
+		var longest = str[0];
+		//alert(str);
+		
+		for (var i = 0; i < str.length; i++) {
+			for (var j = i+1; j < str.length; j++) {
+			//alert(str[i].length);
+			if(longest.length < (str[j].length)){
+				longest = str[j];
+			}
+			
+		}
+	}
+		
+		return longest;
+		}
+
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

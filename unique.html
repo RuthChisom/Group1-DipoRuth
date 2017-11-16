@@ -1,0 +1,34 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function removeDuplicates(){
+		var word = document.getElementById("word").value.toLowerCase().split("");
+		var found=[];
+		//var dup = [];
+		var count=0;
+		for (var i = 0; i < word.length; i++) {
+			if((found.indexOf(word[i]))==-1){
+				found.push(word[i]);
+				
+
+			}
+			else
+			{
+				//dup.push(word[i]);
+				count++;
+				
+			}
+		}
+		alert("(\' "+found + " \' , " + count + ")");
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		<p>Enter word</p>
+		<input type="text" id="word"/>
+		<button onclick="removeDuplicates()" >Check</button>
+	</form>
+</body>
+</html>
