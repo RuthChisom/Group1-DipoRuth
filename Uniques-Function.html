@@ -1,8 +1,8 @@
 <html>
 <head>
 	<script type="text/javascript">
-	function removeDuplicates(){
-		var word = document.getElementById("word").value.toLowerCase().split("");
+	function removeDuplicates(word){
+		//var word = document.getElementById("word").value.toLowerCase().split("");
 		var found=[];
 		//var dup = [];
 		var count=0;
@@ -19,16 +19,16 @@
 				
 			}
 		}
-		alert("(\' "+found + " \' , " + count + ")");
+		return "(\' "+found + " \' , " + count + ")";
 		}
 	</script>
 </head>
 
 <body>
-	<form>
+	<!-- <form>
 		<p>Enter word</p>
 		<input type="text" id="word"/>
 		<button onclick="removeDuplicates()" >Check</button>
-	</form>
+	</form> -->
 </body>
 </html>
